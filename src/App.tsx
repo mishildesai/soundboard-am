@@ -1,7 +1,11 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { Box, ChakraProvider } from "@chakra-ui/react";
 
 function App() {
-  return <ChakraProvider></ChakraProvider>;
+  return (
+    <ChakraProvider>
+      <Box></Box>
+    </ChakraProvider>
+  );
 }
 
 export default App;
