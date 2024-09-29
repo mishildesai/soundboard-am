@@ -14,7 +14,8 @@ export default function SoundCard(props: { sound: SoundItem }) {
   return (
     <Card>
       <CardHeader>{props.sound.name}</CardHeader>
-      <CardBody>
+      <CardBody></CardBody>
+      <CardFooter>
         <Button
           onClick={() => {
             play();
@@ -29,8 +30,7 @@ export default function SoundCard(props: { sound: SoundItem }) {
         >
           Stop
         </Button>
-      </CardBody>
-      <CardFooter></CardFooter>
+      </CardFooter>
     </Card>
   );
 }
